@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+
+    <!-- Base application theme. -->
+    <style name="Theme.RangeSlider" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/teal_200</item>
+
+
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="SliderStyle" parent="@style/Widget.MaterialComponents.Slider">
+        <item name="labelStyle">@style/TooltipStyle</item>
+        <item name="materialThemeOverlay">@style/ThemeOverlay.Slider</item>
+    </style>
+
+    <style name="TooltipStyle" parent="Widget.MaterialComponents.Tooltip">
+        <!-- background color of the Tooltip -->
+        <item name="backgroundTint">@color/white</item>
+    </style>
+
+    <style name="ThemeOverlay.Slider" parent="">
+        <!-- color used by the text in the Tooltip -->
+        <item name="colorOnPrimary">@color/purple_500</item>
+        <item name="colorOnBackground">@color/white</item>
+        <item name="colorSurface">@color/purple_200</item>
+    </style>
+
+</resources>
